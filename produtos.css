@@ -1,0 +1,98 @@
+header{
+	background: #bbbbbb;
+	padding: 20px 0;
+}
+
+/*
+O position fixed: irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente. Geralmente é usado para fixar elementos como cabeçalhos ou sidebars.
+
+O position relative: posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali. Todos os positions precisam de um ponto para iniciar o cálculo da coordenada para assim posicionar o elemento na tela. Ao contrário do que muitos acham, esse ponto não é o ponto central do elemento, o ponto base é o canto superior esquerdo do elemento. A partir deste canto, o browser irá calcular a coordenada que você definiu e irá posicionar o elemento no viewport.
+
+O Position Absolute: é um tanto diferente do Relative. Enquanto o elemento com Position Relative utiliza seu próprio canto para referenciar sua posição, o elemento com Position Absolute se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai.
+
+O Position Static: é o valor padrão para todos os elementos de uma página - todos são inicializados como 'static'. Não há complicação aqui, simplesmente significa que o elemento vai seguir o fluxo da página normalmente. A única boa razão para atribuir explicitamente o valor 'position: static' de um elemento é forçar a remoção de um posicionamento previamente definido.
+*/
+
+.caixa{/* foi criado uma caixa que engloba todos os itens do cabeçalho, a imagem, e os itens */
+	width:940px; /*largura da caixa, tamanho idea para as telas atuais*/
+	position: relative;/*fica relativa a si mesmo. começa o ponto zero do lado esquerdo superior, em relação a oda página*/
+	margin: 0 auto;/*margem, fora da borda, superio e inferior igual a zero, e a esquerda e difeira serão iguais, independente da dimensão da página, fica cetralizada*/
+}
+nav {
+	position: absolute;/*O ponto de referencia do inicio do elemento, ele está locaizado no canto esquerdo superior de ouro element, no caso, a caixa que está englobando toda a navegação, com a caracteristica absoluta, ele está dimensionado pelos elemenos apenas do seu contexto, no caso, o cabeçalho e não a página como um todo,é o formato ideal, quando pretende dimencionar o cabeçalho como um todo*/
+	top:110px; /*posição absouta em relação ao topo do cabeçaho*/
+	right: 0; /*posição do lado direito da caixa do cabeçalho*/
+}
+nav li{/*cada item da lista de navegação terá essas mudanças */
+	display: inline; /*irá formar uma linha com os itens*/
+	margin: 0 0 0 15px; /*região esterna a borda, em cima, em baixo, esquerda, direita*/
+}
+nav a{ /*cada link presente na navegação terá esssas mudanças separadamente, não inclui qualquer outro integrane que possa ser adicionado ao item da lista, por exemplo, uma imagem*/
+	text-decoration: none; /*remover detalhes da decoração padrão do link, como sublinhado*/
+	text-transform: uppercase; /*colocar todas as letras em maiúsculo*/
+	color:#000000; /*mudar a cor para preto*/
+	font-weight:bold; /*mudar o peso da fonte para negrito*/
+	font-size:22px; /*mudar o tamanho da fonte*/
+}
+nav a:hover{ /*ação que ocorre quando o mouse é passado por cima do elemento*/
+	color: #800000; /*mudar cor*/ 
+	text-decoration: underline;/* sublihar texto*/
+}
+.produtos{/*todos os itens da lista juntos*/
+	width: 940px; /*conjuntamente terá esse tamanhototal, dimensão ideal para as telas*/
+	margin: 0 auto;/*fora da borda, margem superior/ inferior sempre zero, a direia igual a esquerda, cenralizado*/
+	padding: 50px 0;/*espaço interno a borda, superior e inferior igual a 50px e latera igual a zero*/
+}
+.produtos li {/*cada itens da lista individualmete, cada um incluindo uma imagem, e três paragrafos*/
+
+	display: inline-block;/*irá formar uma linha e em sequência os blocos(que só ocupa seu espaço) que podem ter suas dimensões mudadas */
+	vertical-align: top;/*o ainhamento vertical (em pé) será no topo*/
+	box-sizing: border-box;/*cada item terá uma borda*/
+	width: 30%;/*largura tota do item da lista*/
+	margin: 0 1.5%;/*margem fora da borda*/
+	padding: 30px 20px;/*espaço interno a borda*/
+	
+
+	text-align: center;/*texto alinhado ao centro do elemento */
+
+	border:2px #000000 solid; /*caracteristicas da borda, tamanho da borda, cor e tracejado da linha*/
+	border-radius: 10px;/*arredondamento da borda*/
+}
+.produtos li:hover{/*ação que ocorre quando o mouse é passado por cima do elemento*/
+	border-color: #800000;
+	border-bottom-width: 5px;
+}
+.produtos li:active{/*ação que ocorre quando oelemnto é clicado*/
+	border-color: #800080;
+	border-width: 3px;
+}
+h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+h2:hover{/*ação que ocorre quando o mouse passa pelo texto h2 */
+	font-size: 34px;
+}
+.produto-descrição{
+	font-size: 18px;
+}
+.produto-preço{
+	font-size: 22px;
+	font-weight:bold;
+	margin-top: 10px;
+}
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+
+}
+
+.Copyright{
+	color:#ffffff;
+	font-size: 13px;
+	margin: 20px;
+
+.rodapé {
+	display: block;
+}
