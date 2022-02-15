@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contato - Barbearia Alura</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel = "stylesheet" href="style.css">
+</head>
+
+<bory>
+	<header>
+		<div class="caixa">
+			<h1 ><img src="logo.png" alt="Logo da barbearia Alura" ></h1>
+			<nav>
+				<ul>
+					<li><a href ="index.html" target="_blank">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contatos.html">Contatos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<form>
+			<label for="nomecompleto">Nome Completo: </label> <!--for do label funcionar, eu preciso ter um id no meu elemento.-->
+			<input type="text" id="nomecompleto"class="input-padrao" required>
+			
+			<label for="email"> Email: </label>
+			<input type="email" id="email"class="input-padrao" placeholder="seuemail@dominio.com" required>
+
+			<label for="telefone"> Telefone: </label>
+			<input type="tel" id="telefone"class="input-padrao" placeholder="(xx) X XXXX-XXXX" required>
+
+			<label for="mensagem"> Mensagem: </label>
+			<textarea cols="70" rows="10" id="mensagem"class="input-padrao"placeholder="Escreva sua mensagem aqui" required></textarea>
+
+			<fieldset>
+				<legend>Como prefere nosso contato:</legend>
+				<label><input type="radio" value="whatsapp" id="radio-whatsapp"name="contato" checked>Whatsapp </label>
+
+				<label><input type="radio" value="email" id="radio-email" name="contato" >Email </label>
+				<!-- cria caixa de marcação de vários ao mesmo tempo, cada input cria uma caixa |  nos três itens do input criar uma nova configuração, que é uma nova propriedade, o “name=“contato””. Essa configuração aqui faz com que todos eles passem a ser do mesmo grupo, e, quando eu clicar em um, ele desmarca o outro.-->
+
+				<label><input type="radio" value="telefone" id="radio-telefone" name="contato">Telefone </label>
+								
+			</fieldset>
+			<fieldset>
+				<legend>Qual horário prefere atendimento?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+			<div>
+				<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+			</div>
+
+
+
+			<input type="submit" value="Enviar formulário" class="enviar">
+		</form>
+		<table>
+			<thead>
+				<tr><!--Linha-->
+					<th>Dia</th><!--coluna-->
+					<th>Horário</th>
+					<td colspan="3">8hs ~ 20hs</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Segunda</td>
+					<td>8hs ~ 20hs</td>
+				</tr>
+				
+				<tr>
+					<td>Quarta</td>
+					<td>8hs ~ 20hs</td>
+				</tr>
+
+				<tr>
+					<td >Sexta</td>
+					<td>8hs ~ 20hs</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer>
+			<img src="logo-branco.png" alt="Logo Barbearia Alura">
+			<p class="Copyright"> &copy; Copyright Barbearia Alura – 2022.</p>
+	</footer>
+</bory>
+
+</html>
