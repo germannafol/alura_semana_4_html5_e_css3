@@ -5,37 +5,63 @@
 	<head>
 		<meta charset="UTF8">
 		<title>Barbearia Alura</title>
+		
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style_home">
+		<link rel = "stylesheet" href="style.css">
+
 	</head>
 
 	<body>
-		
 		<header>
-			<h1 class="titulo-principal">Barbearia Alura</h1>
+			<div class="caixa">
+				<h1 ><img src="logo.png" ></h1>
+				<nav>
+					<ul>
+						<li><a href ="index.html" target="_blank">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contatos.html">Contatos</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
-		<img id="banner" src="banner.jpg" >
 		
-		<div class="principal">
-			<h2 class="titulo-centralizado"><strong>Sobre a Barbearia Alura</strong></h2>
+		<img class="banner" src="banner.jpg" >
+			<!--não é necessário id="", identificador para image, melhor usar classe.-->
 
-			<p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+		<main>
+			
+			
+			<section class="principal"> 
+				<!--Uma section é uma divisão de conteúdo complexo, ou seja, um bloco semânico, diferente da div que é uma diisão visual. Os elementos semânticos são aqueles usados para definir diferentes partes de uma página da web, ou seja, eles tem um significado. Uma tag <div> , por exemplo, não nos diz nada sobre qual será o conteúdo do elemento. Já a tag <footer> , nos diz exatamente qual será o conteúdo deste elemento-->
+				
+				<h2 class="titulo-principal"><strong>Sobre a Barbearia Alura</strong></h2>
 
-			<p id ="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+				<img class="utensilios" src="utensilios.jpg" alt="Utensílios de um barbeiro">
 
-			<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-		</div>
+				<p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-		<dir class="beneficios">
+				<p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 
-			<h3 class="titulo-centralizado">Benefícios</h3>
-			<ul class="lista">
-				<li class="item">Atendimento ao cliente</li>
-				<li class="item">Espaço diferenciado</li>
-				<li class="item">Localização</li>
-				<li class="item">Profissionais Qualificados</li>
-			</ul>
-			<img class="imagemBeneficios" src="beneficios.jpg">
-		</dir>
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>
+
+			<section class="beneficios">
+				<h3 class="titulo-principal">Benefícios</h3>
+				<ul class="lista">
+					<li class="item">Atendimento ao cliente</li>
+					<li class="item">Espaço diferenciado</li>
+					<li class="item">Localização</li>
+					<li class="item">Profissionais Qualificados</li>
+				</ul>
+				<img class="imagemBeneficios" src="beneficios.jpg">
+			</section>
+	</main>
+
+	<footer>
+		<img src="logo-branco.png">
+		<p class="Copyright"> &copy; Copyright Barbearia Alura – 2022.</p>
+	</footer>
+
 	</body>
+
 </html>

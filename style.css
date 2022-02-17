@@ -1,3 +1,4 @@
+/*Css do HTML produtos*/
 header{
 	background: #bbbbbb;
 	padding: 20px 0;
@@ -95,7 +96,7 @@ footer{
 	margin: 20px;
 }
 
-/*html Contato*/
+/*Css do html Contato*/
 main{
 	width: 940px;
 	margin: 0 auto;
@@ -147,3 +148,38 @@ td, th{
 	border: 1px solid black;
 	padding: 8px 15px;
 }
+
+/*Css do HML da página principal - index*/
+.banner{
+	width:100%;
+}
+.titulo-principal{
+		padding-left: 20px;
+		font-size: 2em;
+		margin: 0 0 1em;
+		clear:  left;
+	}
+
+.principal p{
+	margin: 0 0 1em;
+}
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
+}
+.imagemBeneficios {
+	width: 60%;
+}
+.utensilios{
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+
+
+
+
